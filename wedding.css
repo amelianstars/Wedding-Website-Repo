@@ -42,6 +42,7 @@ h4{
   border-radius: 10px;
   box-shadow: 2px 2px 2px 3px #ffffff;
   max-width: 100%;
+  padding-bottom: 50px;
 }
 
 ul li{
@@ -49,6 +50,8 @@ ul li{
   margin-left: 100px;
 }
 
-iframe{
-  width: 100%
+#rsvp{
+  width: 100%;
+  font-family:georgia;
+
 }
