@@ -48,3 +48,7 @@ ul li{
   padding-left: 45px !important;
   margin-left: 100px;
 }
+
+iframe{
+  width: 100%
+}
