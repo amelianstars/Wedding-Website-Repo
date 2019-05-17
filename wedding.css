@@ -43,3 +43,8 @@ h4{
   box-shadow: 2px 2px 2px 3px #ffffff;
   max-width: 100%;
 }
+
+ul li{
+  padding-left: 45px !important;
+  margin-left: 100px;
+}
