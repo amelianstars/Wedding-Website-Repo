@@ -52,12 +52,13 @@ margin-left: 50px;
 
 #rsvp{
   display: block;
-  margin-left: auto;
+  margin-left: 275px;
   margin-right: auto;
-  margin-top: 15px;
+  margin-top: 75px;
   border-radius: 10px;
   max-width: 100%;
   padding-bottom: 50px;
+
 
 }
 #construction{
