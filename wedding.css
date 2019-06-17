@@ -62,15 +62,18 @@ margin-left: 50px;
 }
 
 #rsvp{
+
+
+}
+
+#rsvpform{
   display: block;
   margin-left: 275px;
-  margin-right: auto;
-  margin-top: 75px;
-  border-radius: 10px;
-  max-width: 100%;
-  padding-bottom: 50px;
-
-
+    margin-right: auto;
+    margin-top: 75px;
+        border-radius: 10px;
+      max-width: 100%;
+      padding-bottom: 50px;
 }
 
 
