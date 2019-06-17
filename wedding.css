@@ -70,18 +70,19 @@ margin-left: 50px;
 
 }
 
-#para{
+.para{
   font-family: 'Pangolin', cursive;
-  padding-top: 50px;
+  font-size: 19px;
+  color: #005F6D
 }
 
-#about h1{
+.heading{
   border-top: 1px solid grey;
   border-bottom: 1px solid grey;
   color: grey;
 }
 
-#about h3{
-  padding-top: 50px;
-  color: #064e40;
-}
+ .paragraph-text{
+   padding-top: 50px;
+   padding-bottom: 150px;
+ }
