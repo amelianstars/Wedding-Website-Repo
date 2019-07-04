@@ -1,4 +1,8 @@
 
+
+
+
+/*
 #container{
     height: 5300px;
     max-width: 1100px;
@@ -12,7 +16,10 @@
 }
 
 body{
-  background-color: #E5E5E5 !important;
+  background-image: url(stripes.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
   font-family: 'Dancing Script', cursive !important;
   color: #005F6D !important;
   text-align: center !important;
@@ -21,17 +28,162 @@ body{
 
 }
 
+*/
 
-h1
-{
-  font-size: 50px !important;
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", arial, sans-serif;
+}
+
+.header{
+  position: fixed;
+  width: 100%;
+  background: #222;
+  z-index: 10;
+}
+
+html, body{
+  background: #ECECEC;
+  height: 100%;
+}
+
+.section h1, h2{
+  font-family: 'Amatic SC', cursive;
+  font-size: 50px;
+
+}
+
+.section p.starts{
+  /*font-family: 'Amatic SC', cursive;*/
+  font-family: 'Rouge Script', cursive;
+  font-size: 37px;
+  text-align: center;
+  color: white;
+  font-weight: 550;
+}
+
+.headline{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position: absolute;
+  left: 30px;
+  top: 60px;
+}
+
+.section.intro{
+  background: url("ajadir.jpg")
+  center center no-repeat;
+  background-size: cover;
+  height: 600px;
+padding-bottom: 57%; /* match this to the aspect ratio of your picture */
+border: 5px solid black;
+border-radius: 3px;
+
+
+}
+
+.section#lodging{
+  background:url("tents.jpeg")
+  center center no-repeat;
+  background-size: cover;
+  height: auto;
+padding-bottom: 2%; /* match this to the aspect ratio of your picture */
+padding-top: 1%;
+
+}
+
+.section#about{
+  background:url("Shen1.jpg")
+  center center no-repeat;
+  background-size: cover;
+  height: auto;
+padding-bottom: 50%; /* match this to the aspect ratio of your picture */
+
+
+}
+
+.section#directions{
+  background:url("sand.jpeg")
+  center center no-repeat;
+  background-size: cover;
+  height: auto;
+  padding-top: 50px;
+padding-bottom: 10%; /* match this to the aspect ratio of your picture */
+
+}
+
+#about h2, #directions h2{
+  text-align: center;
+  color: grey;
+  font-weight: bold;
+  padding-bottom: 30px;
+  font-size: 50px;
+}
+
+#lodging .paragraph-text{
+  padding-bottom: 20px;
+  height: auto;
+  max-width: 1100px;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  background-color: #f0f0f0;
+  opacity: .7;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: 1px;
 }
 
 
-h4{
-  color: #0082BA;
-
+#about .paragraph-text{
+  padding-bottom: 20px;
+  height: auto;
+  max-width: 1100px;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  background-color: #222;
+  opacity: .7;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: 1px;
 }
+
+#directions .paragraph-text{
+  padding-bottom: 20px;
+  height: auto;
+  max-width: 1100px;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  background-color: #fff;
+  opacity: .7;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.intro h1{
+  font-size: 40px;
+}
+
+
+#about h4{
+  color: white;
+}
+
+#directions h4, #lodging h4{
+  color: black;
+}
+
+
+
+
 
 
 #mountains{
@@ -46,7 +198,7 @@ h4{
 }
 
 ul li{
-  padding-left: 65px !important;
+  padding-left: 150px !important;
 margin-left: 50px;
 }
 
@@ -79,7 +231,8 @@ margin-left: 50px;
 .para{
   font-family: 'Pangolin', cursive;
   font-size: 19px;
-  color: #005F6D
+
+
 }
 
 .heading{
@@ -89,13 +242,75 @@ margin-left: 50px;
 }
 
  .paragraph-text{
-   padding-top: 50px;
-   padding-bottom: 150px;
+   padding-top:150px;
+   padding-bottom: 50px;
+   text-align: center;
  }
 
- @media only screen and (min-width: 1167px) {
-   #rsvpform{
-     margin-left: 175px;
+ .rentals{
+   border-radius: 29px;
+   display: inline-block;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ #images{
+   text-align: center;
+   padding-top: 50px;
+   margin-left: 60px;
+   padding-bottom: 65px;
+ }
+
+#images a>img{
+  margin-right: 50px;
 
 
+}
+
+.smcx-widget.smcx-embed.smcx-show {
+margin: auto;
+}
+
+#rsvp{
+  max-width: 700px;
+  margin: auto;
+}
+
+
+
+
+
+ @media only screen and (min-width: 700px) {
+
+
+
+
+   .columns{
+     -moz-column-count: 2;
+       -moz-column-gap: 1.25em;
+       -webkit-column-count: 2;
+       -webkit-column-gap: 2.5em;
+       column-count: 2;
+     column-gap: 1.25em;
    }
+
+   #about .paragraph-text{
+     height: 600px;
+ }
+
+ #lodging .paragraph-text{
+   height: 600px;
+ }
+ .intro h1{
+   font-size: 9em;
+ }
+ .section p.starts{
+   /*font-family: 'Amatic SC', cursive;*/
+   font-size: 55px;
+
+ }
+ .section#about{
+   height: 0;
+}
+
+}
