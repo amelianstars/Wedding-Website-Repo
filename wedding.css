@@ -280,7 +280,7 @@ margin: auto;
 
 
 
- @media only screen and (min-width: 700px) {
+ @media only screen and (min-width: 850px) {
 
 
 
@@ -294,7 +294,7 @@ margin: auto;
      column-gap: 1.25em;
    }
 
-  
+
 
  #lodging .paragraph-text{
    height: 600px;
