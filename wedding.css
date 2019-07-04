@@ -58,7 +58,7 @@ html, body{
   /*font-family: 'Amatic SC', cursive;*/
   font-family: 'Rouge Script', cursive;
   font-size: 37px;
-  text-align: center;
+  text-align: left;
   color: white;
   font-weight: 550;
 }
@@ -305,6 +305,7 @@ margin: auto;
  .section p.starts{
    /*font-family: 'Amatic SC', cursive;*/
    font-size: 55px;
+   text-align: center;
 
  }
  .section#about{
