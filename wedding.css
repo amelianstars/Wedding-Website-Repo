@@ -34,6 +34,7 @@ body{
   margin: 0;
   padding: 0;
   font-family: "Helvetica Neue", arial, sans-serif;
+  box-sizing: border-box;
 }
 
 .header{
@@ -100,8 +101,6 @@ padding-top: 1%;
   background-size: cover;
   height: auto;
 padding-bottom: 50%; /* match this to the aspect ratio of your picture */
-
-
 }
 
 .section#directions{
@@ -111,7 +110,14 @@ padding-bottom: 50%; /* match this to the aspect ratio of your picture */
   height: auto;
   padding-top: 50px;
 padding-bottom: 10%; /* match this to the aspect ratio of your picture */
+}
 
+.section#rsvp{
+  background:url(grass.jpeg)
+  center center no-repeat;
+  background-size: cover;
+  height: auto;
+padding-bottom: 4%; /* match this to the aspect ratio of your picture */
 }
 
 #about h2, #directions h2{
@@ -138,20 +144,7 @@ padding-bottom: 10%; /* match this to the aspect ratio of your picture */
 }
 
 
-#about .paragraph-text{
-  padding-bottom: 20px;
-  height: auto;
-  max-width: 1100px;
-  margin: 100px auto;
-  padding: 20px;
-  border-radius: 10px;
-  position: relative;
-  background-color: #222;
-  opacity: .7;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  letter-spacing: 1px;
-}
+
 
 #directions .paragraph-text{
   padding-bottom: 20px;
@@ -197,10 +190,12 @@ padding-bottom: 10%; /* match this to the aspect ratio of your picture */
   padding-bottom: 50px;
 }
 
+/*
 ul li{
   padding-left: 150px !important;
 margin-left: 50px;
 }
+*/
 
 #construction{
   margin-top: 75px;
@@ -213,10 +208,6 @@ margin-left: 50px;
 
 }
 
-#rsvp{
-
-
-}
 
 #rsvpform{
   display: block;
@@ -267,32 +258,61 @@ margin-left: 50px;
 
 }
 
+
 .smcx-widget.smcx-embed.smcx-show {
-margin: auto;
-}
-
-#rsvp{
-  max-width: 700px;
-  margin: auto;
+    margin: auto;
 }
 
 
 
+.column{
+  display: flex;
+  flex-direction: column;
+  background-color: #222;
+  opacity: .9;
+  color: #5d5c5b;
+  height: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: 1px;
+  float: left;
+  width: 50%;
+}
 
+
+
+/* Clear floats after the columns */
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+/*
+
+#about .paragraph-text{
+  padding-bottom: 20px;
+  height: auto;
+  max-width: 1100px;
+  margin: 100px auto;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  background-color: #222;
+  opacity: .7;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: 1px;
+}
+
+*/
 
  @media only screen and (min-width: 1098px) {
 
 
-
-
-   .columns{
-     -moz-column-count: 2;
-       -moz-column-gap: 1.25em;
-       -webkit-column-count: 2;
-       -webkit-column-gap: 2.5em;
-       column-count: 2;
-     column-gap: 1.25em;
-   }
 
 
 
@@ -311,5 +331,21 @@ margin: auto;
  .section#about{
    height: 0;
 }
+
+
+
+#hamburger-menu{
+  display: none !important;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    width: 100%;
+  }
+  .row{
+    padding: 0;
+    margin: 0;
+  }
+
 
 }
