@@ -64,6 +64,8 @@ html, body{
 .section h1, h2{
   font-family: 'Amatic SC', cursive;
   font-size: 50px;
+  opacity: .2;
+
 
 }
 
